@@ -85,7 +85,7 @@ fi
 case "$1" in
   copy)
     shift
-    printf "%s" "$*" | handle_copy "$tool"
+    inputstr "$*"
     ;;
   *)
     show_error "$0: Unknown command \"$1\""
